@@ -119,9 +119,9 @@ const ManageRestaurantForm=({onSave,isLoading,restaurant }: Props)=> {
           );
         });
     
-        // if (formDataJson.imageFile) {
-        //   formData.append(`imageFile`, formDataJson.imageFile);
-        // }
+        if (formDataJson.imageFile) {
+          formData.append(`imageFile`, formDataJson.imageFile);
+        }
     
         onSave(formData);
       };
